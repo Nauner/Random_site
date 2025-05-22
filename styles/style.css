@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1200px; /* Ограничение ширины страницы */
+    margin: 0 auto; /* Центрирование */
+    padding: 0 20px; /* Немного отступов по бокам для удобства */
+    background: #f4f4f4; /* Лёгкий фон для удобочитаемости */
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Раздвигаем логотип и меню */
+    width: 100%;
+    padding: 0 20px; /* Добавляем отступы по краям */
+}
+
+.logo {
+    margin-right: auto; /* Логотип сместится влево */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Меню занимает всю доступную ширину */
+}
+
+.menu-item {
+    padding: 1rem 0.5rem;
+    margin: 0 1rem; /* Отступ между элементами */
+}
+
+.menu-item a {
+    color: #000000 !important; /* Черный цвет ссылок */
+    text-decoration: none !important; /* Убираем подчеркивание */
+    font-weight: bold; /* Делаем текст жирнее (по желанию) */
+}
+.menu-item a:visited {
+    color: #000000 !important; /* Цвет посещённой ссылки */
+}
+.menu-item a:hover {
+    color: black  !important; /* Цвет ссылки при наведении */
+}
+.menu-item a:active {
+    color: black !important; /* Цвет ссылки при клике */
+}
+
+.container {
+    max-width: 1200px; /* Или другое значение, например 90% */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+.container h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container video{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.container p{
+    text-align: center;
+}
+.container img{
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.tovar {
+    text-align: center;
+    width: 150px;
+}
+
+.tovar img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title-onas{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
