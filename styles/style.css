@@ -7,7 +7,11 @@ body{
     max-width: 1200px; /* Ограничение ширины страницы */
     margin: 0 auto; /* Центрирование */
     padding: 0 20px; /* Немного отступов по бокам для удобства */
-    background: #f4f4f4; /* Лёгкий фон для удобочитаемости */
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #212121;
+    font-family: 'Arial', sans-serif;
 }
 .header {
     display: flex;
@@ -47,6 +51,40 @@ body{
 .menu-item a:active {
     color: black !important; /* Цвет ссылки при клике */
 }
+
+.gradient-text{
+    font-size: 38px;
+    font-weight: bold;
+
+    background: linear-gradient(270deg, #ff0047, #2c34c7, #00fddc, #ff0047);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
+
+
 
 .container {
     max-width: 1200px; /* Или другое значение, например 90% */
@@ -104,4 +142,25 @@ body{
 .title-onas{
     text-align: center;
     padding: 20px 20px 20px 20px;
+}
+
+.about{
+    margin-top: 90px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center; /* или center, зависит от нужного вертикального выравнивания */
+    gap: 20px; /* отступ между картинкой и текстом */
+}
+.about-img {
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+}
+.about-text {
+    flex: 1; /* чтобы текст занимал оставшееся место */
+    text-align: initial;
+    max-width: 550px;
+    font-size: 24px;
 }
